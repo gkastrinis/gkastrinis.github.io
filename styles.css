@@ -138,6 +138,12 @@ header .right a:hover, header .right a:active
 {
 	color: #5aff00 !important;
 }
+iframe
+{
+	border: none;
+	width: 100%;
+	height: 100%;
+}
 img
 {
 	border: 0;
@@ -190,6 +196,14 @@ nav
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
+}
+.share
+{
+	margin-left: 20px;
+	display: block;
+	float: left;
+	font-size: 0.65em;
+	letter-spacing: 2px;
 }
 .title
 {
