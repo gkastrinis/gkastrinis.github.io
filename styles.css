@@ -219,6 +219,10 @@ nav
 	color: #4CD600;
 	text-shadow: none !important;
 }
+.endShare a:hover
+{
+	color: #FF8000;
+}
 .endShare p
 {
 	padding: 10px;
