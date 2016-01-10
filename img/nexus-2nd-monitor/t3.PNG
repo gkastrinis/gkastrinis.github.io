@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>George Kastrinis</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Personal web page of George Kastrinis"/>
+	<meta name="author" content="George Kastrinis"/>
+	<meta name="geo.region" content="GR-A1"/>
+	<meta name="geo.placename" content="Athens, Greece"/>
+	<meta name="geo.position" content="37.984054;23.728065"/>
+	<meta name="ICBM" content="37.984054, 23.728065"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="styles.css" type="text/css" media="all"/>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900" rel="stylesheet" type="text/css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style>
+
+</style>
+</head>
+
+<body class="alt1">
+	<header class="container">
+		<div class="left"><a href="#"><span>George</span><span>Kastrinis</span></a></div>
+		<nav class="right">
+			<a href="#Publications" title="Publications" id="publications" class="bullet">&bull;</a>
+			<a href="#Talks" title="Talks" id="talks" class="bullet">&bull;</a>
+			<a href="#CodingThoughts" title="Coding Thoughts" id="coding" class="bullet">&bull;</a>
+			<!--<a href="#Art" title="Art" id="art" class="bullet">&bull;</a>-->
+		</nav>
+	</header>
+
+
+	<article class="alt1">
+		<a name="Home"></a>
+		<div class="container">
+			<div class="left"><div id="me" class="round"></div></div>
+			<div class="right">
+				<p>My name is George Kastrinis. I am a Ph.D. candidate at the <a href="http://www.uoa.gr">University of Athens</a>, Greece (<a href="http://www.di.uoa.gr">Dept. of Informatics and Telecommunications</a>), in the area of programming languages and static analysis. My advisor is Prof. <a href="https://yanniss.github.io/">Yannis Smaragdakis</a>. Nowadays, my work focuses on Pointer Analysis using Datalog and the declarative <a href="http://doop.program-analysis.org/" title="Doop">Doop framework</a>.</p>
+
+				<p>You can email me at george.kast＠gmail.com (don't copy/paste, it won't work).</p>
+				<div id="icons">
+					<p><a href="http://cgi.di.uoa.gr/~gkast/CV.pdf" class="imglink"><img src="img/pdf.png" alt="pdf"/></a><br />my <a href="http://cgi.di.uoa.gr/~gkast/CV.pdf">CV</a></p>
+					<p><a href="https://bitbucket.org/gkastrinis" class="imglink"><img src="img/bitbucket.png" alt="bitbucket"/></a><br />on <a href="https://bitbucket.org/gkastrinis">bitbucket</a></p>
+					<p><a href="https://github.com/gkastrinis" class="imglink"><img src="img/octocat.png" alt="github"/></a><br />on <a href="https://github.com/gkastrinis">github</a></p>
+					<p><a href="https://twitter.com/gkastrinis" class="imglink"><img src="img/twitter.png" alt="twitter"/></a><br />on <a href="https://twitter.com/gkastrinis">twitter</a></p>
+				</div>
+			</div>
+
+			<div id="internships">
+				<div class="round"><a href="http://research.microsoft.com/"><img src="img/msr.jpg" /></a><span>summer '14</span></div>
+				<div class="round"><a href="http://www.logicblox.com/"><img src="img/logicblox.png" /></a><span>summer '13</span></div>
+			</div>
+		</div>
+	</article>
+
+
+	<article>
+		<a name="Publications"></a>
+		<div class="container alt2">
+			<h1>Publications</h1>
+			<ul class="middle">
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/reflection-aplas15.pdf">More Sound Static Handling of Java Reflection</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+				</div>
+				<div>
+					Yannis Smaragdakis, George Balatsouras, George Kastrinis, Martin Bravenboer
+					<span class="info"><abbr title="Asian Symposium on Programming Languages and Systems"><a href="http://pl.postech.ac.kr/aplas2015/">APLAS '15</a></abbr></span>
+					<span class="date">November 2015</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Reflection is a highly dynamic language feature that poses grave problems for static analyses. In the Java setting, reflection is ubiquitous in large programs. Any handling of reflection will be approximate, and overestimating its reach in a large codebase can be catastrophic for precision and scalability. We present an approach for handling reflection with improved empirical soundness (as measured against prior approaches and dynamic information) in the context of a points-to analysis. Our approach is based on the combination of string-flow and points-to analysis from past literature augmented with (a) substring analysis and modeling of partial string flow through string builder classes; (b) new techniques for analyzing reflective entities based on information available at their use-sites. In experimental comparisons with prior approaches, we demonstrate a combination of both improved soundness (recovering the majority of missing call-graph edges) and increased performance.</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/introspective-pldi14.pdf">Introspective Analysis: Context-Sensitivity, Across the Board</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+					<span class="extra"><a href="http://cgi.di.uoa.gr/~smaragd/pldi14ae/pldi14-ae.tgz">artifact</a></span>
+				</div>
+				<div>
+					Yannis Smaragdakis, George Kastrinis, George Balatsouras
+					<span class="info"><abbr title="Programming Language Design and Implementation"><a href="http://conferences.inf.ed.ac.uk/pldi2014/">PLDI '14</a></abbr></span>
+					<span class="date">June 2014</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Context-sensitivity is the primary approach for adding more precision to a points-to analysis, while hopefully also maintaining scalability. An oft-reported problem with context-sensitive analyses, however, is that they are bi-modal: either the analysis is precise enough that it manipulates only manageable sets of data, and thus scales impressively well, or the analysis gets quickly derailed at the first sign of imprecision and becomes orders-of-magnitude more expensive than would be expected given the program’s size. There is currently no approach that makes precise context-sensitive analyses (of any flavor: call-site-, object-, or type-sensitive) scale across the board at a level comparable to that of a context-insensitive analysis. To address this issue, we propose introspective analysis: a technique for uniformly scaling context-sensitive analysis by eliminating its performance-detrimental behavior, at a small precision expense. Introspective analysis consists of a common adaptivity pattern: first perform a context-insensitive analysis, then use the results to selectively refine (i.e., analyze context-sensitively) program elements that will not cause explosion in the running time or space. The technical challenge is to appropriately identify such program elements. We show that a simple but principled approach can be remarkably effective, achieving scalability (often with dramatic speedup) for benchmarks previously completely out-of-reach for deep context-sensitive analyses.</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/oopsla2013-set-based.pdf">Set-Based Pre-Processing for Points-To Analysis</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+				</div>
+				<div>
+					Yannis Smaragdakis, George Balatsouras, George Kastrinis
+					<span class="info"><abbr title="Object-Oriented Programming, Systems, Languages & Applications"><a href="http://splashcon.org/2013/cfp/618">OOPSLA '13</a></abbr></span>
+					<span class="date">October 2013</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> We present set-based pre-analysis: a virtually universal optimization technique for flow-insensitive points-to analysis. Points-to analysis computes a static abstraction of how object values flow through a program’s variables. Set-based pre-analysis relies on the observation that much of this reasoning can take place at the set level rather than the value level. Computing constraints at the set level results in significant optimization opportunities: we can rewrite the in- put program into a simplified form with the same essential points-to properties. This rewrite results in removing both local variables and instructions, thus simplifying the subsequent value-based points-to computation. Effectively, set-based pre-analysis puts the program in a normal form optimized for points-to analysis.</p><p>Compared to other techniques for off-line optimization of points-to analyses in the literature, the new elements of our approach are the ability to eliminate statements, and not just variables, as well as its modularity: set-based pre-analysis can be performed on the input just once, e.g., allowing the pre-optimization of libraries that are subsequently reused many times and for different analyses. In experiments with Java programs, set-based pre-analysis eliminates 30% of the program’s local variables and 30% or more of computed context-sensitive points-to facts, over a wide set of benchmarks and analyses, resulting in a 24% average speedup (max: 103%, median: 20%).</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/pldi246-kastrinis.pdf">Hybrid Context-Sensitivity for Points-To Analysis</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+					<span class="extra"><a href="http://www.di.uoa.gr/~gkast/pldi2013-hybrid.pdf">slides</a></span>
+					<span class="extra"><a href="http://www.di.uoa.gr/~gkast/pldi2013-hybrid-poster.pdf">poster</a></span>
+				</div>
+				<div>
+					George Kastrinis, Yannis Smaragdakis
+					<span class="info"><abbr title="Programming Language Design and Implementation"><a href="http://pldi2013.ucombinator.org/">PLDI '13</a></abbr></span>
+					<span class="date">June 2013</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Context-sensitive points-to analysis is valuable for achieving high precision with good performance. The standard flavors of context-sensitivity are call-site-sensitivity (kCFA) and object-sensitivity. Combining both flavors of context-sensitivity increases precision but at an infeasibly high cost.  We show that a selective combination of call-site- and object-sensitivity for Java points-to analysis is highly profitable. Namely, by keeping a combined context only when analyzing selected language features, we can closely approximate the precision of an analysis that keeps both contexts at all times. In terms of speed, the selective combination of both kinds of context not only vastly outperforms non-selective combinations but is also faster than a mere object-sensitive analysis. This result holds for a large array of analyses (e.g., 1-object-sensitive, 2-object-sensitive with a context-sensitive heap, type-sensitive) establishing a new set of performance/precision sweet spots.</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/cc13-exceptions.pdf">Efficient and Effective Handling of Exceptions in Java Points-To Analysis</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+					<span class="extra"><a href="http://www.di.uoa.gr/~gkast/cc13-exceptions-slides.pdf">slides</a></span>
+				</div>
+				<div>
+					George Kastrinis, Yannis Smaragdakis
+					<span class="info"><abbr title="Compiler Construction"><a href="http://www.etaps.org/index.php/2013/cc">CC '13</a></abbr></span>
+					<span class="date">March 2013</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> A joint points-to and exception analysis has been shown to yield beneﬁts in both precision and performance. Treating exceptions as regular objects,however, incurs signiﬁcant and rather unexpected overhead. We show that in a typical joint analysis most of the objects computed to ﬂow in and out of a method are due to exceptional control-ﬂow and not normal call-return control-ﬂow. For instance, a context-insensitive analysis of the Antlr benchmark from the DaCapo suite computes 4-5 times more objects going in or out of a method due to exceptional control-ﬂow than due to normal control-ﬂow. As a consequence, the analysis spends a large amount of its time considering exceptions.</p>
+	<p>We show that the problem can be addressed both effectively and elegantly by coarsening the representation of exception objects. An interesting ﬁnd is that, instead of recording each distinct exception object, we can collapse all exceptions of the same type, and use one representative object per type, to yield nearly identical precision (loss of less than 0.1%) but with a boost in performance of at least 50% for most analyses and benchmarks and large space savings (usually 40% or more).</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/MSc_Thesis.pdf">The Role of Exceptions in Static Program Analysis for Java</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+				</div>
+				<div>
+					George Kastrinis
+					<span class="info">(M.Sc. Thesis) <a href="http://www.di.uoa.gr">Dept. of Informatics</a> - <a href="http://www.uoa.gr">University of Athens</a></span>
+					<span class="date">July 2012</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Static program analysis is the analysis of computer software that focuses on the examination of the source code, without actually executing the program built from that code. An important subclass of static program analysis is that of Points-To Analysis, an analysis that reasons about which objects can ﬂow into which variables, for every possible program execution. The points-to results, are fundamental for further, more complex analyses.</p>
+	<p>For an analysis like the above to be precise, it has to simulate every aspect of the source code and of the underlying system in which the program will be executed, that can inﬂuence the ﬂow of objects into variables. On the other hand, the results need to be produced within a logical timespan for the analysis to be practical. Thus it is crucial that every overapproximation made by the analysis is as &quot;tight&quot; as possible.</p>
+	<p>One important feature of object-oriented languages like Java is that of exceptions. Previous work has shown that accurate handling of exceptions can signiﬁcantly affect the precision of the results. In this work, we present three alternative ways to handle exceptions in Java, as well as the effect each one has over the precision and the performance of the resulting analysis. An impressive ﬁnd is the fact that, instead of recording each distinct exception object, we can collapse all exceptions of the same type, and use one representative object per type, with barely any loss in precision but at the same time with a signiﬁcant boost in performance (in many analyses achieving more than 20% improvement).</p>
+	<p>Our analysis is part of the Doop framework, that provides a points-to analysis for a number of possible types of context, written entirely in Datalog.</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/setn2012.pdf">Constraint Propagation as the Core of Local Search</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+				</div>
+				<div>
+					Nikolaos Pothitos, George Kastrinis, Panagiotis Stamatopoulos
+					<span class="info"><abbr title="Hellenic Conference on Artificial Intelligence"><a href="http://setn2012.ucg.gr/index.php/en/">SETN '12</a></abbr></span>
+					<span class="date">May 2012</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Constraint programming is a powerful paradigm for solving constraint satisfaction problems, using various techniques. Amongst them, local search is a prominent methodology, particularly for large instances. However, it lacks uniformity, as it includes many variations accompanied by complex data structures, that cannot be easily brought under the same &quot;umbrella.&quot; In this work we embrace their wide diversity by adopting propagation algorithms. Our constraint based local search (CBLS) system provides declarative alternative tools to express search methods, by exploiting conﬂict-sets of constraints and variables. Their maintenance is straightforward as it does not employ queues, unlike the state of the art CBLS systems. Thus, the propagation complexity is kept linear in the number of changes required after each assignment. Experimental results illustrate the capabilities, not only of the already implemented methods, such as hill climbing, simulated annealing, etc., but also the robustness of the underlying propagation engine.</p></div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/BSc_Thesis.pdf">Local Search Algorithms in Constraint Satisfaction Problems</a></span>
+					<span class="extra abs"><a href="#">+abstract</a></span>
+				</div>
+				<div>
+					George Kastrinis
+					<span class="info">(B.Sc. Thesis - in Greek) <a href="http://www.di.uoa.gr">Dept. of Informatics</a> - <a href="http://www.uoa.gr">University of Athens</a></span>
+					<span class="date">November 2011</span>
+				</div>
+				<div class="abstract"><p><b>Abstract:</b> Constraint Satisfaction Problems (CSPs), which are present in many aspects of our daily life, are also a major field of research in the area of Artificial Intelligence. In the last few years, there has been an excess of methods and algorithms, which try to exploit innovating ideas in an effort to solve harder problems. Despite all that effort, there are many cases, where systematic, complete search algorithms are unable to find a solution within a reasonable time.</p>
+	<p>In such cases, the use of Local Search algorithms, a programming paradigm widely used in order to solve computationally hard problems, might be the only way for a feasible solution to be obtained. In addition, Local Search algorithms, are naturally suited for problems where some optimisation criteria should be taken into account.</p>
+	<p>The purpose of this thesis, is the extension of Naxos Solver, an object oriented library for solving Constraint Satisfaction Problems, which primary uses systematic, complete search algorithms, with the capability of using Local Search algorithms, in an attempt to counter a wider range of problems.</p></div>
+				</li>
+			</ul>
+
+		</div>
+	</article>
+
+
+	<article>
+		<a name="Talks"></a>
+		<div class="container alt1">
+			<h1>Talks</h1>
+			<ul class="middle">
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/softlab_2012.pdf">Pointer Analysis in 10 Rules</a></span>
+					<span class="info">10th PL-seminar - <a href="http://www.softlab.ntua.gr/">SoftLab</a></span>
+					<span class="date">December 2012</span>
+				</div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/foss-uoa/foss_web_pt2__2011_12_16.zip">Web Development - part 2</a></span>
+					<span class="info">PHP, MySQL - <a href="https://foss.uoa.gr/">Foss UoA</a></span>
+					<span class="date">December 2011</span>
+				</div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/foss-uoa/foss_web_pt1__2011_12_09.zip">Web Development - part 1</a></span>
+					<span class="info">PHP - <a href="https://foss.uoa.gr/">Foss UoA</a></span>
+					<span class="date">December 2011</span>
+				</div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/foss-uoa/foss_mysql_11-12-2009.zip">Web Development - part 2</a></span>
+					<span class="info">PHP, MySQL - <a href="https://foss.uoa.gr/">Foss UoA</a></span>
+					<span class="date">December 2009</span>
+				</div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.di.uoa.gr/~gkast/foss-uoa/foss_css_27-11-2009.zip">Web Development - part 1</a></span>
+					<span class="info">CSS - <a href="https://foss.uoa.gr/">Foss UoA</a></span>
+					<span class="date">November 2009</span>
+				</div>
+				</li>
+
+				<li>
+				<div>
+					<span class="title"><a href="http://www.slideshare.net/andywhitlock/how-to-do-presentations-that-dont-induce-suicide">How to do presentations that don't induce suicide
+</a></span>
+					<span class="info">by Andy Whitlock</span>
+				</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+
+
+	<article>
+		<a name="CodingThoughts"></a>
+		<div class="container alt2">
+			<h1>Coding Thoughts</h1>
+			
+			<a name="post1"><div class="middle">
+			<a href="#post1" class="share">share</a>
+			<a href="https://gist.github.com/gkastrinis/22c27578cfa093837880" class="share">GitHubGist</a>
+			<div class="endShare"><script src="https://gist.github.com/gkastrinis/22c27578cfa093837880.js"></script></div>
+			</div></a>
+
+			<a name="post0"><div class="middle">
+			<a href="#post0" class="share">share</a>
+			<a href="https://gist.github.com/gkastrinis/6ff399672f9c05852118" class="share">GitHubGist</a>
+			<div class="endShare"><script src="https://gist.github.com/gkastrinis/6ff399672f9c05852118.js"></script></div>
+			</div></a>
+		</div>
+	</article>
+
+	<!--<article>
+<?php /*require("content/art.php");*/ ?>
+</article>-->
+
+
+	<script type="text/javascript">
+		$(function () {
+			$.each($("li span.abs > a"), function () {
+				$(this).click(function () {
+					$(this).text( $(this).text() == "+abstract" ? "-abstract" : "+abstract" );
+					$(".abstract", $(this).parent().parent().parent()).toggle();
+					return false;
+				});
+			});
+		});
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2800382-4']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>
