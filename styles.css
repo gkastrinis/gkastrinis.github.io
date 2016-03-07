@@ -39,13 +39,12 @@ body
 	padding: 0;
 	color: #EFEFEF;
 	letter-spacing: 1px;
-	//text-shadow: black 2px 2px 2px;
 }
 .container
 {
 	padding-bottom: 10px;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-family:"Oswald",sans-serif;
 	font-weight: 300;
 }
@@ -182,7 +181,7 @@ ul
 .middle
 {
 	display: block;
-	width: 65%;
+	width: 60%;
 	margin: 0 auto;
 }
 #me
@@ -214,16 +213,20 @@ nav
 {
 	clear: both;
 }
-.endShare a
+.gist
+{
+	display: none;
+}
+.gist a
 {
 	color: #4CD600;
 	text-shadow: none !important;
 }
-.endShare a:hover
+.gist a:hover
 {
 	color: #FF8000;
 }
-.endShare p
+.gist p
 {
 	padding: 10px;
 	text-align: justify;
