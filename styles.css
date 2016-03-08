@@ -137,8 +137,9 @@ header .right a:hover, header .right a:active
 {
 	color: #5aff00 !important;
 }
-header .right a.hack:hover, header .right a.hack:active
+header .right a.hack, header .right a.hack:hover, header .right a.hack:active
 {
+	cursor: default;
 	color: #555 !important;
 }
 iframe
