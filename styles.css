@@ -137,6 +137,10 @@ header .right a:hover, header .right a:active
 {
 	color: #5aff00 !important;
 }
+header .right a.hack:hover, header .right a.hack:active
+{
+	color: #555 !important;
+}
 iframe
 {
 	border: none;
@@ -168,15 +172,15 @@ img
 	font-weight: bold;
 	text-shadow: none;
 }
-li
-{
-	margin-bottom: 30px;
-	text-align: left;
-}
 ul
 {
 	list-style: none outside none;
 	padding-left: 0;
+}
+ul li
+{
+	margin-bottom: 30px;
+	text-align: left;
 }
 .middle
 {
@@ -236,7 +240,37 @@ nav
 	font-size: 1.2em;
 	font-weight: bold;
 }
-
+.bounty
+{
+	padding: 15px;
+}
+.bounty img
+{
+	display: inline-block;
+	margin: 0 auto;
+}
+.bounty div
+{
+	margin: 15px auto;
+}
+.bounty span
+{
+	display: block;
+	padding: 10px;
+	color: #333;
+	font-weight: bold;
+	background: grey;
+}
+ol
+{
+	list-style-position: inside;
+	padding-left: 0;
+}
+ol li
+{
+	margin-bottom: 20px;
+	text-align: justify;
+}
 
 
 
