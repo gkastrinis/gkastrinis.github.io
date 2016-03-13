@@ -1,47 +1,38 @@
 a,
-a:visited
-{
+a:visited {
 	color: #5aff00;
 	text-decoration: none;
 	text-shadow: black 2px 2px 2px;
 }
-a:hover
-{
+a:hover {
 	color: #FF8000;
 }
-.abstract
-{
+.abstract {
 	margin-top: 20px;
 	display: none;
 	font-size: .9em;
 	text-align: justify;
 }
-.abstract > p
-{
+.abstract > p {
 	margin: 5px 0;
 }
-.alt1
-{
+.alt1 {
 	background: #1F1F1F;
 }
-.alt2
-{
+.alt2 {
 	background: #333;
 }
-article > a
-{
+article > a {
 	padding-top: 50px;
 	display: block;
 }
-body
-{
+body {
 	margin: 0;
 	padding: 0;
 	color: #EFEFEF;
 	letter-spacing: 1px;
 }
-.container
-{
+.container {
 	padding-bottom: 10px;
 	text-align: center;
 	font-size: 1.4em;
@@ -49,46 +40,40 @@ body
 	font-weight: 300;
 }
 .container > .left,
-.container > .right
-{
+.container > .right {
 	width: 350px;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: justify;
 	line-height: 100%;
 }
-.container > .right
-{
+.container > .right {
 	margin-left: 40px;
 	width: 450px;
 }
-.container > .right p
-{
+.container > .right p {
 	margin: 0 0 15px 0;
 	padding: 0;
 	line-height: 130%;
 }
-.date, .info
-{
+.date,
+.info {
 	color: #BBB;
 }
-.date:before, .info:before
-{
+.date:before,
+.info:before {
 	padding: 0 10px;
 	content: "\2666";
 }
-.extra:before
-{
+.extra:before {
 	padding: 0 5px 0 10px;
 	content: "[";
 }
-.extra:after
-{
+.extra:after {
 	padding: 0 0 0 5px;
 	content: "]";
 }
-h1
-{
+h1 {
 	padding: 25px 0 0 0;
 	margin: 0 0 25px 0;
 	font-variant: small-caps;
@@ -96,8 +81,7 @@ h1
 	font-family: Oswald, sans-serif;
 	font-weight: bold;
 }
-header
-{
+header {
 	z-index: 2;
 	position: fixed;
 	top: 0;
@@ -110,172 +94,143 @@ header
 
 	text-shadow: #5C4900 2px 2px 2px;
 }
-header .left span
-{
+header .left span {
 	padding: 0 5px;
 	font-size: 1.7em !important;
 	font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
 	text-shadow: none;
 }
-header .left span:first-child
-{
+header .left span:first-child {
 	color: #5aff00;
 }
-header .left span:last-child
-{
+header .left span:last-child {
 	color: #333;
 	background: #5aff00;
 }
-header .right a
-{
+header .right a {
 	color: #555 !important;
 	font-size: 3em;
 	padding: 0;
 	vertical-align: middle;
 }
-header .right a:hover, header .right a:active
-{
+header .right a:hover,
+header .right a:active {
 	color: #5aff00 !important;
 }
-header .right a.hack, header .right a.hack:hover, header .right a.hack:active
-{
+header .right a.hack,
+header .right a.hack:hover,
+header .right a.hack:active {
 	cursor: default;
 	color: #555 !important;
 }
-img
-{
+img {
 	border: 0;
 	vertical-align: middle;
 }
-#internships
-{
+#internships {
 	margin-top: 35px;
 }
-#internships > div
-{
+#internships > div {
 	margin: 0 10px;
 	padding: 10px;
 	display: inline-block;
 	background: white;
 }
-#internships > div > span
-{
+#internships > div > span {
 	margin-top: 10px;
 	display: block;
 	color: #333;
 	font-weight: bold;
 	text-shadow: none;
 }
-ul
-{
+ul {
 	list-style: none outside none;
 	padding-left: 0;
 }
-ul li
-{
+ul li {
 	margin-bottom: 30px;
 	text-align: left;
 }
-.middle
-{
+.middle {
 	display: block;
 	width: 60%;
 	margin: 0 auto;
 }
-#me
-{
+#me {
 	width: 350px;
 	height: 460px;
 	border: 6px solid white;
 	background-image: url("img/me/me6.jpg");
 }
-nav
-{
+nav {
 	text-align: center !important;
 }
-.round
-{
+.round {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 }
-.share
-{
+.share {
 	margin-left: 20px;
 	display: block;
 	float: left;
 	font-size: 0.7em;
 	letter-spacing: 2px;
 }
-.endShare
-{
+.endShare {
 	clear: both;
 }
-.gist
-{
+.gist {
 	display: none;
 }
-.gist a
-{
+.gist a {
 	color: #4CD600;
 	text-shadow: none !important;
 }
-.gist a:hover
-{
+.gist a:hover {
 	color: #FF8000;
 }
-.gist p
-{
+.gist p {
 	padding: 10px;
 	text-align: justify;
 }
-.title
-{
+.title {
 	font-size: 1.2em;
 	font-weight: bold;
 }
-.bounty
-{
+.bounty {
 	padding: 15px;
 }
-.bounty img
-{
+.bounty img {
 	display: inline-block;
 	margin: 0 auto;
 }
-.bounty div
-{
+.bounty div {
 	margin: 15px auto;
 }
-.bounty span
-{
+.bounty span {
 	display: block;
 	padding: 10px;
 	color: #333;
 	font-weight: bold;
 	background: grey;
 }
-ol
-{
+ol {
 	list-style-position: inside;
 	padding-left: 0;
 }
-ol li
-{
+ol li {
 	margin-bottom: 20px;
 	text-align: justify;
 }
-#icons
-{
+#icons {
 	text-align: center;
 }
-#icons p
-{
+#icons p {
 	display: inline-block;
 	margin-right: 20px;
 	text-align: center;
 }
-#currentBullet
-{
+#currentBullet {
 	color: #5AFF00 !important;
 }
