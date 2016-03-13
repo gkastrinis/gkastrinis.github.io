@@ -142,13 +142,6 @@ header .right a.hack, header .right a.hack:hover, header .right a.hack:active
 	cursor: default;
 	color: #555 !important;
 }
-iframe
-{
-	border: none;
-	display: block;
-	width: 100%;
-	clear: left;
-}
 img
 {
 	border: 0;
@@ -272,188 +265,17 @@ ol li
 	margin-bottom: 20px;
 	text-align: justify;
 }
-
-
-
-
-
-
-
-
-a.imglink
+#icons
 {
-	border-bottom: none !important;
-}
-.error
-{
-	width: 400px;
-	display: block;
-	color: #ff6643;
-	margin: 0 auto 15px auto;
-	text-shadow: #662718 2px 2px 2px;
-}
-#currentBullet
-{
-	color: #5AFF00 !important;
-}
-#icons {
 	text-align: center;
 }
 #icons p
 {
 	display: inline-block;
-
 	margin-right: 20px;
 	text-align: center;
 }
-.thumbnail
+#currentBullet
 {
-	width: 300px;
-	height: 230px;
-	margin: 7px;
-	display: inline-block;
-	border: 3px solid white;
-	background-size: 300px auto;
-	-o-background-size: 300px auto;
-	-webkit-background-size: 300px auto;
-}
-.thumbnail .shade
-{
-	width: 300px;
-	height: 230px;
-	background: black;
-	opacity: 0.4;
-	-moz-opacity: 0.4;
-}
-.thumbnail .shade:hover
-{
-	opacity: 0;
-	-moz-opacity: 0;
-}
-.thumb
-{
-	display: inline-block;
-	text-align: center;
-}
-.thumb .thumbnail
-{
-	width: 500px;
-	height: 350px;
-	border: 0px solid #a6c9e2;
-	background-size: 500px auto;
-	-o-background-size: 500px auto;
-	-webkit-background-size: 500px auto;
-}
-.desc
-{
-	width: 400px;
-	margin-left: 30px;
-	display: inline-block;
-	text-align: justify;
-	text-shadow: none;
-}
-.desc h2
-{
-	text-align: center;
-}
-.desc a
-{
-	color: #5aff00 !important;
-	text-shadow: none !important;
-}
-#page404
-{
-	width: 550px;
-	height: 309px;
-	display: block;
-	margin: 0 auto 20px auto;
-	background: url("../img/404_onepiece.jpg");
-	box-shadow: 4px 4px 4px -2px #333;
-}
-#if
-{
-	width: 380px;
-	margin: 0 auto;
-}
-#jap
-{
-	empty-cells: hide;
-	color:  #cdd1d3;
-}
-#jap td
-{
-	padding: 3px 5px;
-	vertical-align: bottom;
-	color:  #cdd1d3;
-	font: normal 0.8em Arial, Helvetica, sans-serif;
-	background-color: #2A2A2A;
-	border: 2px #000 solid;
-}
-#example
-{
-	margin-top: 20px;
-	color: #cdd1d3;
-}
-
-
-
-#postersPortfolio
-{
-	margin-bottom: 30px;
-}
-
-
-#artPortfolio
-{
-	display: none;
-}
-
-#portfolio,
-#postersPortfolio,
-#artPortfolio
-{
-	text-align: center;
-}
-
-#postersPortfolio
-{
-	margin-bottom: 20px;
-}
-
-#postersPortfolio .thumbnail,
-#postersPortfolio .thumbnail .shade
-{
-	width: 200px;
-	height: 250px;
-}
-
-#artPortfolio .thumbnail,
-#artPortfolio .thumbnail .shade
-{
-	width: 200px;
-	height: 100px;
-}
-
-
-.gallery {
-	height: 230px;
-}
-.gallery li {
-	display: block;
-	float: left;
-	height: 100px;
-	margin-bottom: 6px;
-	margin-right: 6px;
-	width: 100px;
-}
-.gallery li a {
-	height: 100px;
-	width: 100px;
-}
-.gallery li a img {
-	max-width: 100px;
-}
-
-.gallery a {
-	border: 0 !important;
+	color: #5AFF00 !important;
 }
