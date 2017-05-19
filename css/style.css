@@ -124,16 +124,20 @@ header h1 {
 	display: inline-block;
 	line-height: 1.4em;
 }
-#gk-intro .gk-left {
-	margin-right: 25px;
-	text-align: right;
-}
+#gk-intro .gk-left,
 #gk-intro .gk-right {
 	margin-left: 25px;
 	text-align: justify;
+	vertical-align: top;
 }
 #gk-intro .gk-right p {
 	margin-bottom: 10px;
+}
+.bountyHead {
+	text-align: center;
+}
+.bountyHead img {
+	width: 40%;
 }
 .bounty div:last-child {
 	background-color: #666666;

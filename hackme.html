@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+	<!-- Vertical Timeline based on https://codyhouse.co/gem/vertical-timeline/ -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,43 +16,12 @@
 <body>
 
 <header>
-	<h1>Hack Me</h1>
+	<h1>George Kastrinis</h1>
 </header>
 
 <section id="gk-intro">
 	<div class="gk-left">
-		<div class="bounty">
-			<img src="img/treasure.png" style="width: 40%">
-			<img src="img/file.png">
-			<div>The secret file <strong>~/.bounty</strong> from my personal <strong>Linux</strong> Laptop</div>
-			<div>€ 15</div>
-		</div>
-		<div class="bounty">
-			<img src="img/treasure.png" style="width: 40%">
-			<img src="img/file.png">
-			<div>The file <strong>E:\bounty</strong> from my personal <strong>Windows 10</strong> Desktop</div>
-			<div>€ 15</div>
-		</div>
-		<div class="bounty">
-			<img src="img/treasure.png" style="width: 40%">
-			<img src="img/google.png">
-			<div>The e-mail with the subject <strong>Bounty secret #1</strong> from <a href="mailto:george.kast@gmail.com">my Gmail</a></div>
-			<div>€ 15</div>
-		</div>
-		<div class="bounty">
-			<img src="img/treasure.png" style="width: 40%">
-			<img src="img/facebook.png">
-			<div>Post the message <strong>"Bounty by @YourName"</strong> from <a href="https://www.facebook.com/gkastrinis">my Facebook</a></div>
-			<div>€ 15</div>
-		</div>
-		<div class="bounty">
-			<img src="img/treasure.png" style="width: 40%">
-			<img src="img/twitter_b.png">
-			<div>Post the message <strong>"Bounty by @YourName"</strong> from <a href="https://twitter.com/gkastrinis">my Twitter</a></div>
-			<div>€ 15</div>
-		</div>
-	</div>
-	<div class="gk-right">
+		<h2>Hack Me</h2>
 		<p>I encourage you to gain <strong>unauthorized</strong> access
 		to my phone, computers or accounts.  If you do, I'm offering a
 		treasure hunt price in Euro.</p>
@@ -61,7 +31,30 @@
 		receive a partial bounty without retrieving the hidden
 		treasures.</p>
 		<hr>
-		<h1>Rules of engagement</h1>
+		<div class="bountyHead"><img src="img/treasure.png"></div>
+		<div class="bounty">
+			<div>The file <strong>~/.bounty</strong> on my personal <strong>Linux</strong> Laptop</div>
+			<div>€ 15</div>
+		</div>
+		<div class="bounty">
+			<div>The file <strong>E:\bounty</strong> on my personal <strong>Windows 10</strong> Desktop</div>
+			<div>€ 15</div>
+		</div>
+		<div class="bounty">
+			<div>The e-mail with the subject <strong>Bounty secret #1</strong> from <a href="mailto:george.kast@gmail.com">my Gmail</a></div>
+			<div>€ 15</div>
+		</div>
+		<div class="bounty">
+			<div>Post the message <strong>"Bounty by @YourName"</strong> from <a href="https://www.facebook.com/gkastrinis">my Facebook</a></div>
+			<div>€ 15</div>
+		</div>
+		<div class="bounty">
+			<div>Post the message <strong>"Bounty by @YourName"</strong> from <a href="https://twitter.com/gkastrinis">my Twitter</a></div>
+			<div>€ 15</div>
+		</div>
+	</div>
+	<div class="gk-right">
+		<h2>Rules of engagement</h2>
 		<ol>
 			<li>No university or production system attacks. My colleagues or university don't like being attacked and may prosecute</li>
 			<li>One pay-out per day</li>
@@ -70,6 +63,7 @@
 			<li>No leaving known attack vectors behind after the attack</li>
 			<li>Don't violate my privacy, make GPG signatures in my name, etc. Follow common sense</li>
 		</ol>
+		<hr>
 		<h2>No physical violence!</h2>
 		<p>Beating me up or threatening with physical violence is not
 		fair game. Blackmailing or physically stealing my laptop or
@@ -88,5 +82,9 @@
 	</div>
 </section>
 
+<section id="gk-timeline" class="gk-container">
+</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
