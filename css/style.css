@@ -222,17 +222,23 @@ header h1 {
 	margin-top: -12px;
 }
 .gk-timeline-img.gk-pub {
-	background: #75ce66;
+	background: #75CE66;
 }
 .gk-timeline-img.gk-talk {
 	background: #3DA4CC;
 	/*background: #c03b44;*/
 }
 .gk-timeline-img.gk-location {
-	background: #f0ca45;
+	background: #F0CA45;
 }
 .gk-timeline-img.gk-code {
 	background: #E69500;
+}
+.gk-timeline-img.gk-shieldOK {
+	background: #20A805;
+}
+.gk-timeline-img.gk-shieldFAIL {
+	background: #AD3205;
 }
 @media only screen and (min-width: 1170px) {
 	.gk-timeline-img {
