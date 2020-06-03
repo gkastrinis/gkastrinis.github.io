@@ -34,7 +34,7 @@ h2 {
 }
 
 a {
-	color: #7aadff;
+	color: #ffae00/*#7aadff*/;
 	text-decoration: none;
 	line-height: 1.4em;
 	font-weight: bold;
@@ -82,6 +82,9 @@ a {
 	text-align: justify;
 	vertical-align: top;
 }
+
+#gk-intro .gk-left { width: 25%; }
+#gk-intro .gk-right { width: 35%; }
 
 .hackme .gk-left,
 .hackme .gk-right {
