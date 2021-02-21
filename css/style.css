@@ -13,7 +13,8 @@ body {
 	font-size: 100%;
 	font-family: "Open Sans", sans-serif;
 	color: #7f8c97;
-	background-color: #e9f0f5;
+	/*background-color: #e9f0f5;*/
+	background-color: #2f363d;
 }
 
 
@@ -175,6 +176,9 @@ a {
 	margin-top: -12px;
 }
 
+.gk-timeline-img.gk-info {
+	background: #800b00;
+}
 .gk-timeline-img.gk-pub {
 	background: #75CE66;
 }
@@ -199,7 +203,7 @@ a {
 	padding: 1.6em;
 	width: 45%;
 	position: relative;
-	background: white;
+	background: #fafafa;
 	border-radius: 0.25em;
 	box-shadow: 0 3px 0 #d7e4ed;
 }
@@ -218,7 +222,7 @@ a {
 	border: 7px solid transparent;
 	border-right: 7px solid white;
 	border-color: transparent;
-	border-left-color: white;
+	border-left-color: #fafafa;
 }
 
 .gk-timeline-content h2 a {
@@ -239,6 +243,11 @@ a {
 	font-size: 1rem;
 	padding: .8em 0;
 	opacity: .5;
+	color: white;
+}
+
+.gk-me {
+	text-align: justify;
 }
 
 
