@@ -278,3 +278,7 @@ ol li {
 	font-weight: bold;
 	font-size: 1.3em;
 }
+
+a svg {
+	height: 64px;
+}
